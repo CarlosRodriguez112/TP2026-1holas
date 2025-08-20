@@ -17,8 +17,4 @@
     <None Include="OH.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="hyyyyyy\" />
-  </ItemGroup>
-
 </Project>
