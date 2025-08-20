@@ -9,12 +9,23 @@
 
   <ItemGroup>
     <Compile Remove="Cuadrado.cs" />
+    <Compile Remove="CuadradoH.cs" />
+    <Compile Remove="Factorial.cs" />
+    <Compile Remove="FileName.cs" />
     <Compile Remove="OH.cs" />
+    <Compile Remove="Rectangulo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Factorial.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Cuadrado.cs" />
+    <None Include="CuadradoH.cs" />
+    <None Include="FileName.cs" />
     <None Include="OH.cs" />
+    <None Include="Rectangulo.cs" />
   </ItemGroup>
 
 </Project>
