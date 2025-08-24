@@ -33,7 +33,7 @@
         }
         else
         {
-            double resultado = Numero2 / Numero1;
+            double resultado = Numero1 / Numero2;
             Console.WriteLine($"Division: {resultado}");
         }
     }
