@@ -20,9 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+ 
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
+ 
     <None Include="Factorial.cs" />
   </ItemGroup>
 
