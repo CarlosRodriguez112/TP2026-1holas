@@ -8,9 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Arreglos\MainsArreglos.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="Calculadoraprices.cs" />
     <Compile Remove="Class1.cs" />
+    <Compile Remove="Cmplementario\MainAuto.cs" />
     <Compile Remove="Cuadrado.cs" />
     <Compile Remove="CuadradoH.cs" />
     <Compile Remove="Factorial.cs" />
@@ -20,9 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Arreglos\MainsArreglos.cs" />
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
+    <None Include="Cmplementario\MainAuto.cs" />
     <None Include="Factorial.cs" />
   </ItemGroup>
 
