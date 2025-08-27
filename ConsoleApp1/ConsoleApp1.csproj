@@ -22,11 +22,19 @@
   </ItemGroup>
 
   <ItemGroup>
+
     <None Include="Arreglos\MainsArreglos.cs" />
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
     <None Include="Cmplementario\MainAuto.cs" />
+=======
+ 
+    <None Include="Calculadora.cs" />
+    <None Include="Calculadoraprices.cs" />
+    <None Include="Class1.cs" />
+ 
+
     <None Include="Factorial.cs" />
   </ItemGroup>
 
