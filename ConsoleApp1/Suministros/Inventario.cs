@@ -1,4 +1,6 @@
-﻿public class Inventario
+﻿using System.Globalization;
+
+public class Inventario
 {
     //Atributos
     private Suministro[] suministros;
@@ -54,4 +56,63 @@
         Console.WriteLine("Orden de los suministros invertidos");
     }
 
+
+
+    //Vaciar el inventario
+
+    public void VaciarInventario()
+    {
+        Array.Clear(suministros, 0, suministros.Length);
+        Console.WriteLine("El inventario ha sido vaciado");
+        Console.WriteLine($"Longitud del inventario: {suministros.Length}");
+    }
+
+
+
+    //Agregar suministro 3 parametros
+
+    public void AgregarSuministro(string nombre, int cantidad, int prioridad)
+    {
+        int indice = Array.FindIndex(suministros, itemB => itemB.Nombre.ToLower() == nombre.ToLower());
+        if (indice >= 0)
+        {
+            Console.WriteLine($"Ya existe y {nombre} encontrado en la posicion {indice}");
+        }
+        else
+        {
+            Array.Resize(ref suministros, suministros.Length + 1);
+            suministros[suministros.Length - 1] = new Suministro(nombre, cantidad, prioridad);
+            Console.WriteLine($"{nombre} Ha sido agregado al inventario");
+        }
+    }
+
+
+    //Agregar suministro unicamente con nombre
+    public void AgregarSuministro(string nombre)
+    {
+        AgregarSuministro(nombre, 1, 2);
+    }
+
+    //Eliminar suministro
+
+    public void EliminarSuministro(string nombre)
+    {
+        int indice = Array.FindIndex(suministros, itemB => itemB.Nombre.ToLower() == nombre.ToLower());
+        if (indice >= 0)
+        {
+            for (int i= indice; i < suministros.Length - 1; i++)
+            {
+                suministros[i] = suministros[i + 1];
+            }
+
+            Array.Resize(ref suministros, suministros.Length - 1);
+            Console.WriteLine($"{nombre} se elimno");
+            Console.ForegroundColor = ConsoleColor.Red;
+        }
+        else
+        {
+            Console.WriteLine($"{nombre} no esta en el inventario");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+        }
+    }
 }
