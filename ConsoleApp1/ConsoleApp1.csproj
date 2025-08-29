@@ -19,6 +19,7 @@
     <Compile Remove="FileName.cs" />
     <Compile Remove="OH.cs" />
     <Compile Remove="Rectangulo.cs" />
+    <Compile Remove="Suministros\Mainsum.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +45,7 @@
     <None Include="FileName.cs" />
     <None Include="OH.cs" />
     <None Include="Rectangulo.cs" />
+    <None Include="Suministros\Mainsum.cs" />
   </ItemGroup>
 
 </Project>
