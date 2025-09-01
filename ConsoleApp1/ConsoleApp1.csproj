@@ -15,6 +15,7 @@
     <Compile Remove="Cmplementario\MainAuto.cs" />
     <Compile Remove="Cuadrado.cs" />
     <Compile Remove="CuadradoH.cs" />
+    <Compile Remove="Ecepsiones\Class1.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="FileName.cs" />
     <Compile Remove="OH.cs" />
@@ -33,6 +34,7 @@
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
+    <None Include="Ecepsiones\Class1.cs" />
  
 
     <None Include="Factorial.cs" />
