@@ -40,7 +40,7 @@
     {
         this.nombre = nombre;
         this.consumo = consumo;
-        this.encendido = true;   //Encendido y apagado
+        this.encendido = false;   //Encendido y apagado
     }
 
     public void Encender()
