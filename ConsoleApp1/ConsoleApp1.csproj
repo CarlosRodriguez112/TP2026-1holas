@@ -49,4 +49,8 @@
     <None Include="Suministros\Mainsum.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>
