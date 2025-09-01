@@ -9,12 +9,14 @@
 
   <ItemGroup>
     <Compile Remove="Arreglos\MainsArreglos.cs" />
+    <Compile Remove="Banco\MainBanco.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="Calculadoraprices.cs" />
     <Compile Remove="Class1.cs" />
     <Compile Remove="Cmplementario\MainAuto.cs" />
     <Compile Remove="Cuadrado.cs" />
     <Compile Remove="CuadradoH.cs" />
+    <Compile Remove="Dispositivos\Princi.cs" />
     <Compile Remove="Ecepsiones\Class1.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="FileName.cs" />
@@ -25,16 +27,20 @@
 
   <ItemGroup>
     <None Include="Arreglos\MainsArreglos.cs" />
+    <None Include="Banco\MainBanco.cs" />
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
     <None Include="Cmplementario\MainAuto.cs" />
-=======
+
  
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
+    <None Include="Dispositivos\Princi.cs" />
+    <None Include="Ecepsiones\Class1.cs" />
  
+
 
     <None Include="Factorial.cs" />
   </ItemGroup>
@@ -49,7 +55,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="NewFolder\" />
+    <Folder Include="Dispositivos\ghihg\" />
   </ItemGroup>
 
 </Project>
