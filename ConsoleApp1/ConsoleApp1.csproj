@@ -21,6 +21,7 @@
     <Compile Remove="Factorial.cs" />
     <Compile Remove="FileName.cs" />
     <Compile Remove="OH.cs" />
+    <Compile Remove="PersonaL\PersonaL.cs" />
     <Compile Remove="Rectangulo.cs" />
     <Compile Remove="Suministros\Mainsum.cs" />
   </ItemGroup>
@@ -50,6 +51,7 @@
     <None Include="CuadradoH.cs" />
     <None Include="FileName.cs" />
     <None Include="OH.cs" />
+    <None Include="PersonaL\PersonaL.cs" />
     <None Include="Rectangulo.cs" />
     <None Include="Suministros\Mainsum.cs" />
   </ItemGroup>
