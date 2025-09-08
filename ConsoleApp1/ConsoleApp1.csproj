@@ -10,6 +10,7 @@
   <ItemGroup>
     <Compile Remove="Arreglos\MainsArreglos.cs" />
     <Compile Remove="Banco\MainBanco.cs" />
+    <Compile Remove="Banco\MainListas.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="Calculadoraprices.cs" />
     <Compile Remove="Class1.cs" />
@@ -29,6 +30,7 @@
   <ItemGroup>
     <None Include="Arreglos\MainsArreglos.cs" />
     <None Include="Banco\MainBanco.cs" />
+    <None Include="Banco\MainListas.cs" />
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
