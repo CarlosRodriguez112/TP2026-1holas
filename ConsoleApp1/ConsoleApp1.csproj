@@ -13,14 +13,19 @@
     <Compile Remove="Banco\MainListas.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="Calculadoraprices.cs" />
+    <Compile Remove="Casteos\Casteos.cs" />
     <Compile Remove="Class1.cs" />
     <Compile Remove="Cmplementario\MainAuto.cs" />
     <Compile Remove="Cuadrado.cs" />
     <Compile Remove="CuadradoH.cs" />
     <Compile Remove="Dispositivos\Princi.cs" />
     <Compile Remove="Ecepsiones\Class1.cs" />
+    <Compile Remove="ElJuego\MainJuego.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="FileName.cs" />
+    <Compile Remove="Interfaces\Animal.cs" />
+    <Compile Remove="Interfaces\ejemplo.cs" />
+    <Compile Remove="Interfaces\IAnimal.cs" />
     <Compile Remove="OH.cs" />
     <Compile Remove="PersonaL\PersonaL.cs" />
     <Compile Remove="Rectangulo.cs" />
@@ -33,6 +38,7 @@
     <None Include="Banco\MainListas.cs" />
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
+    <None Include="Casteos\Casteos.cs" />
     <None Include="Class1.cs" />
     <None Include="Cmplementario\MainAuto.cs" />
 
@@ -42,6 +48,7 @@
     <None Include="Class1.cs" />
     <None Include="Dispositivos\Princi.cs" />
     <None Include="Ecepsiones\Class1.cs" />
+    <None Include="ElJuego\MainJuego.cs" />
  
 
 
@@ -52,6 +59,9 @@
     <None Include="Cuadrado.cs" />
     <None Include="CuadradoH.cs" />
     <None Include="FileName.cs" />
+    <None Include="Interfaces\Animal.cs" />
+    <None Include="Interfaces\ejemplo.cs" />
+    <None Include="Interfaces\IAnimal.cs" />
     <None Include="OH.cs" />
     <None Include="PersonaL\PersonaL.cs" />
     <None Include="Rectangulo.cs" />
