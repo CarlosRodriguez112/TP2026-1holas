@@ -19,6 +19,7 @@
     <Compile Remove="CuadradoH.cs" />
     <Compile Remove="Dispositivos\Princi.cs" />
     <Compile Remove="Ecepsiones\Class1.cs" />
+    <Compile Remove="ElJuego\MainJuego.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="FileName.cs" />
     <Compile Remove="OH.cs" />
@@ -42,6 +43,7 @@
     <None Include="Class1.cs" />
     <None Include="Dispositivos\Princi.cs" />
     <None Include="Ecepsiones\Class1.cs" />
+    <None Include="ElJuego\MainJuego.cs" />
  
 
 
