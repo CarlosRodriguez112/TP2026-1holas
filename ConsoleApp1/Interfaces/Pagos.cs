@@ -6,7 +6,7 @@ double cantidadTarjeta = 2000;
 bool irse = false;
 
 Console.WriteLine($"Tienes ${cantidadEfectivo} en efectivo \ny tienes ${cantidadTarjeta} en la tarjeta");
-while (cantidadEfectivo > 0 && cantidadTarjeta > 0 && irse != true)
+while ((cantidadEfectivo > 0 || cantidadTarjeta > 0) && irse != true)
 {
     
     Console.WriteLine("Ingresa el monto a pagar: ");
