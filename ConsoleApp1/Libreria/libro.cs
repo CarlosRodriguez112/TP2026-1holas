@@ -1,4 +1,75 @@
-﻿using System.Globalization;
+﻿// Programa principal 
+// Usando librerias
+using System.Text.RegularExpressions;
+
+// Instanciar librerias
+Libreria libreria = new Libreria();
+
+try
+{
+    Console.WriteLine("Numero de operaciones");
+    int operaciones = int.Parse(Console.ReadLine() ?? "");
+    // Aplicar expresiones regulares
+    for (int i = 0; i < operaciones; i++)
+    {
+        // Sin aplicar expresiones regulares
+        /*string[] entrada = (Console.ReadLine() ?? "").Split(' ');
+
+        */
+        string linea = Console.ReadLine() ?? "";
+        string[] entrada = Regex.Matches(linea, @"[\""].+?[\""]|[^ ]+")
+                                 .Cast<Match>()
+                                 .Select(m => m.Value.Trim('"'))
+                                 .ToArray();
+
+        string comando = entrada[0];
+        switch (comando)
+        {
+            case "LIBRO":
+                libreria.AgregarLibro(entrada[1], entrada[2], entrada[3]);
+                break;
+            case "CALIFICAR":
+                if (entrada.Length == 4)
+                {
+                    Console.WriteLine(entrada.Length);
+                    libreria.CalificarLibro(entrada[1], int.Parse(entrada[3]));
+                }
+
+                //Sin expresiones regulares
+                // COon expresiones regulares
+                /*else
+                {
+                    libreria.CalificarLibro(entrada[1], int.Parse(entrada[3]), string.Join(" ", entrada.Skip(4)));
+                    Console.WriteLine(entrada.Length);
+                }*/
+
+                else if (entrada.Length == 5)
+                {
+                    Console.WriteLine(entrada.Length);
+                    libreria.CalificarLibro(entrada[1], int.Parse(entrada[3]), string.Join(" ", entrada.Skip(4)));
+                }
+                else
+                {
+                    Console.WriteLine(entrada.Length);
+                    throw new FormatException("Formato incorrecto para calificacion");
+                }
+                    break;
+            case "MEJOR":
+                libreria.MostrarMejorLibro(entrada[1]);
+                break;
+            case "CRITERIO":
+                libreria.CambiarCriterio(entrada[1]);
+                break;
+            default:
+                throw new InvalidOperationException("Comando no valido.");
+        }
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Error: {ex.Message}");
+}
+
 
 public class Libro
 {
@@ -141,7 +212,7 @@ public class Libreria
         {
             libros.Add(new LibroFiccion(titulo, autor, genero));
         }
-        else if (generoFiccion.Contains(genero))
+        else if (generoTecnico.Contains(genero))
         {
             libros.Add(new LibroTecnico(titulo, autor, genero));
         }
@@ -205,7 +276,7 @@ public class Libreria
         }
         else if (criterio == "VOTOS")
         {
-            estrategiarecomendiacion = new RecomendacionPorPromedio();
+            estrategiarecomendiacion = new RecomendacionPorVotos();
         }
         else
         {
@@ -215,4 +286,27 @@ public class Libreria
 
     //Mejor libro
 
+    public void MostrarMejorLibro(string genero)
+    {
+        List<Libro> librosGenero = new List<Libro>();
+
+        foreach (var libro in libros)
+        {
+            if (libro.Genero == genero)
+            {
+                librosGenero.Add(libro);
+            }
+        }
+
+        var mejorLibro = estrategiarecomendiacion.ObtenerMejorLibro(librosGenero);
+
+        if (mejorLibro != null)
+        {
+            Console.WriteLine(mejorLibro.Titulo);
+        }
+        else
+        {
+            Console.WriteLine("No hay libros en este genero");
+        }
+    }
 }
