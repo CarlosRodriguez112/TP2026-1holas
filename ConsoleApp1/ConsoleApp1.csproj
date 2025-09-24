@@ -28,6 +28,7 @@
     <Compile Remove="Interfaces\ejemplo.cs" />
     <Compile Remove="Interfaces\IAnimal.cs" />
     <Compile Remove="Interfaces\Pagos.cs" />
+    <Compile Remove="Libreria\libro.cs" />
     <Compile Remove="OH.cs" />
     <Compile Remove="PersonaL\PersonaL.cs" />
     <Compile Remove="Rectangulo.cs" />
@@ -66,6 +67,7 @@
     <None Include="Interfaces\ejemplo.cs" />
     <None Include="Interfaces\IAnimal.cs" />
     <None Include="Interfaces\Pagos.cs" />
+    <None Include="Libreria\libro.cs" />
     <None Include="OH.cs" />
     <None Include="PersonaL\PersonaL.cs" />
     <None Include="Rectangulo.cs" />
@@ -74,6 +76,18 @@
 
   <ItemGroup>
     <Folder Include="Dispositivos\ghihg\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BiblotecadeLibro">
+      <HintPath>..\BiblotecadeLibro\bin\Debug\net8.0\BiblotecadeLibro.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtensionesBibloteca">
+      <HintPath>..\ExtensionesBibloteca\bin\Debug\net8.0\ExtensionesBibloteca.dll</HintPath>
+    </Reference>
+    <Reference Include="ValidacionesBilioteca">
+      <HintPath>..\ValidacionesBilioteca\bin\Debug\net8.0\ValidacionesBilioteca.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
