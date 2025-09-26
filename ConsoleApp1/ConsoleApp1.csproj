@@ -85,6 +85,9 @@
     <Reference Include="ExtensionesBibloteca">
       <HintPath>..\ExtensionesBibloteca\bin\Debug\net8.0\ExtensionesBibloteca.dll</HintPath>
     </Reference>
+    <Reference Include="RobotLibrary">
+      <HintPath>..\P1\RobotLibrary\bin\Debug\net8.0\RobotLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="ValidacionesBilioteca">
       <HintPath>..\ValidacionesBilioteca\bin\Debug\net8.0\ValidacionesBilioteca.dll</HintPath>
     </Reference>
