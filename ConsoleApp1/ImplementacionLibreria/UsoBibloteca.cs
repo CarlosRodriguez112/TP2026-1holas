@@ -33,14 +33,14 @@ foreach (var libro in librosAutor)
 
 
 //Usar metodo de extension
-var libro1 = gestordeLibros.BuscarLibrosAutor("Edgar Allan Poe")[0];
+var libroN = gestordeLibros.BuscarLibrosAutor("Edgar Allan Poe")[0];
 Console.WriteLine("Informacion del libro: ");
-Console.WriteLine(libro1.InformacionLibro());
+Console.WriteLine(libroN.InformacionLibro());
 
-Console.WriteLine("Es libro antiguo: " + libro1.EsLibroClasico());
+Console.WriteLine("Es libro antiguo: " + libroN.EsLibroClasico());
 
 //Metodos de validacion
 
 Console.WriteLine("Validaciones: ");
-Console.WriteLine("Es un año valido: " + Validaciones.EsTituloValido(libro1.AnioPublicacion));
-Console.WriteLine("Es un titulo valido: " + Validaciones.EsTituloValido(libro1.Titulo));
+Console.WriteLine("Es un año valido: " + Validaciones.EsAnioValido(libroN.AnioPublicacion));
+Console.WriteLine("Es un titulo valido: " + Validaciones.EsTituloValido(libroN.Titulo));
