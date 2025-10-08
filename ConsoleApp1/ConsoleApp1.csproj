@@ -24,12 +24,15 @@
     <Compile Remove="ElJuego\MainJuego.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="FileName.cs" />
+    <Compile Remove="ImplementacionLibreria\UsoBibloteca.cs" />
     <Compile Remove="Interfaces\Animal.cs" />
     <Compile Remove="Interfaces\ejemplo.cs" />
     <Compile Remove="Interfaces\IAnimal.cs" />
     <Compile Remove="Interfaces\Pagos.cs" />
     <Compile Remove="Libreria\libro.cs" />
     <Compile Remove="OH.cs" />
+    <Compile Remove="P1\Class1.cs" />
+    <Compile Remove="P1\Myrobot.cs" />
     <Compile Remove="PersonaL\PersonaL.cs" />
     <Compile Remove="Rectangulo.cs" />
     <Compile Remove="Suministros\Mainsum.cs" />
@@ -63,12 +66,15 @@
     <None Include="Cuadrado.cs" />
     <None Include="CuadradoH.cs" />
     <None Include="FileName.cs" />
+    <None Include="ImplementacionLibreria\UsoBibloteca.cs" />
     <None Include="Interfaces\Animal.cs" />
     <None Include="Interfaces\ejemplo.cs" />
     <None Include="Interfaces\IAnimal.cs" />
     <None Include="Interfaces\Pagos.cs" />
     <None Include="Libreria\libro.cs" />
     <None Include="OH.cs" />
+    <None Include="P1\Class1.cs" />
+    <None Include="P1\Myrobot.cs" />
     <None Include="PersonaL\PersonaL.cs" />
     <None Include="Rectangulo.cs" />
     <None Include="Suministros\Mainsum.cs" />
@@ -76,6 +82,7 @@
 
   <ItemGroup>
     <Folder Include="Dispositivos\ghihg\" />
+    <Folder Include="Dispositivos\NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>
