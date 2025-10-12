@@ -89,6 +89,9 @@
     <Reference Include="BiblotecadeLibro">
       <HintPath>..\BiblotecadeLibro\bin\Debug\net8.0\BiblotecadeLibro.dll</HintPath>
     </Reference>
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\practica_1\ClassLibrary1\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.dll</HintPath>
+    </Reference>
     <Reference Include="ExtensionesBibloteca">
       <HintPath>..\ExtensionesBibloteca\bin\Debug\net8.0\ExtensionesBibloteca.dll</HintPath>
     </Reference>

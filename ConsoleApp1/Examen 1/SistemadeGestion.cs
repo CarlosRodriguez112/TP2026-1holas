@@ -1,14 +1,13 @@
-﻿
-public class Programa
+﻿public class Programa
 {
     public static void Main(string[] args)
     {
         GestionProyectos gestor = new GestionProyectos();
-        int operaciones = int.Parse(Console.ReadLine());
+        int operaciones = int.Parse(Console.ReadLine() ?? "");
 
         for (int i = 0; i < operaciones; i++)
         {
-            string linea = Console.ReadLine();
+            string linea = Console.ReadLine() ?? "";
             var partes = linea.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             string comando = partes[0].ToUpper();
 
@@ -20,18 +19,22 @@ public class Programa
 
                 case "PROGRAMADOR":
                     if (partes.Length == 4)
+                    {
                         gestor.RegistrarProgramador(new ProgramadorIndividual(partes[1], int.Parse(partes[2]), partes[3]));
+                    }
                     else
+                    {
                         gestor.RegistrarProgramador(new ProgramadorEquipo(partes[1], int.Parse(partes[2]), partes[3], partes[4]));
+                    }
                     break;
 
                 case "RESULTADO":
-                    if (int.TryParse(partes[3], out int nivel)) // individual
+                    if (int.TryParse(partes[3], out int nivel))
                     {
                         string comentario = partes.Length > 4 ? string.Join(' ', partes.Skip(4)) : "";
                         gestor.RegistrarResultadoIndividual(partes[1], partes[2], nivel, comentario);
                     }
-                    else // equipo
+                    else
                     {
                         string comentario = partes.Length > 4 ? string.Join(' ', partes.Skip(4)) : "";
                         gestor.RegistrarResultadoEquipo(partes[1], partes[2], partes[3], comentario);

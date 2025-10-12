@@ -1,0 +1,5 @@
+﻿Compilación iniciada a las 01:12 p. m....
+1>------ Operación Compilar iniciada: Proyecto: ClassLibrary1, configuración: Debug Any CPU ------
+1>ClassLibrary1 -> C:\Users\carli\OneDrive\Documentos\Tecnicas de Programacion\Program3\practica_1\ClassLibrary1\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.dll
+========== Compilación: 1 correcto, 0 erróneo, 0 actualizado, 0 omitido ==========
+========== Compilar completado a las 01:12 p. m. y tardó 04.636 segundos ==========
