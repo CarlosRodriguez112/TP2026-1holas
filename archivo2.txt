@@ -1,0 +1,2 @@
+Esto esta en un archivo con ruta absoluta
+Lo que sea.
