@@ -8,20 +8,35 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="24102025\clase1.cs" />
+    <Compile Remove="24102025\clase2.cs" />
+    <Compile Remove="24102025\LSP.cs" />
+    <Compile Remove="24102025\OCP.cs" />
     <Compile Remove="Arreglos\MainsArreglos.cs" />
     <Compile Remove="Banco\MainBanco.cs" />
     <Compile Remove="Banco\MainListas.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="Calculadoraprices.cs" />
+    <Compile Remove="Calificaciones\Calificaciones.cs" />
     <Compile Remove="Casteos\Casteos.cs" />
     <Compile Remove="Class1.cs" />
     <Compile Remove="Cmplementario\MainAuto.cs" />
     <Compile Remove="Cuadrado.cs" />
     <Compile Remove="CuadradoH.cs" />
+    <Compile Remove="DIP\DIP.cs" />
     <Compile Remove="Dispositivos\Princi.cs" />
     <Compile Remove="Ecepsiones\Class1.cs" />
     <Compile Remove="Electronicos\Electronicos.cs" />
     <Compile Remove="ElJuego\MainJuego.cs" />
+    <Compile Remove="Estructuras\Arbol.cs" />
+    <Compile Remove="Estructuras\Arreglos.cs" />
+    <Compile Remove="Estructuras\Cola.cs" />
+    <Compile Remove="Estructuras\Diccionario.cs" />
+    <Compile Remove="Estructuras\ListaEnlazada.cs" />
+    <Compile Remove="Estructuras\Listas.cs" />
+    <Compile Remove="Estructuras\Pila.cs" />
+    <Compile Remove="Estructuras\Tupla.cs" />
+    <Compile Remove="Examen 1\SistemadeGestion.cs" />
     <Compile Remove="Factorial.cs" />
     <Compile Remove="FileName.cs" />
     <Compile Remove="ImplementacionLibreria\UsoBibloteca.cs" />
@@ -29,21 +44,28 @@
     <Compile Remove="Interfaces\ejemplo.cs" />
     <Compile Remove="Interfaces\IAnimal.cs" />
     <Compile Remove="Interfaces\Pagos.cs" />
+    <Compile Remove="ISP\LSP.cs" />
     <Compile Remove="Libreria\libro.cs" />
+    <Compile Remove="ManejodeArchivos\ManejodeArchivos.cs" />
     <Compile Remove="OH.cs" />
     <Compile Remove="P1\Class1.cs" />
     <Compile Remove="P1\Myrobot.cs" />
+    <Compile Remove="P1\Robots.cs" />
     <Compile Remove="PersonaL\PersonaL.cs" />
     <Compile Remove="Rectangulo.cs" />
     <Compile Remove="Suministros\Mainsum.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="24102025\clase2.cs" />
+    <None Include="24102025\LSP.cs" />
+    <None Include="24102025\OCP.cs" />
     <None Include="Arreglos\MainsArreglos.cs" />
     <None Include="Banco\MainBanco.cs" />
     <None Include="Banco\MainListas.cs" />
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
+    <None Include="Calificaciones\Calificaciones.cs" />
     <None Include="Casteos\Casteos.cs" />
     <None Include="Class1.cs" />
     <None Include="Cmplementario\MainAuto.cs" />
@@ -52,10 +74,19 @@
     <None Include="Calculadora.cs" />
     <None Include="Calculadoraprices.cs" />
     <None Include="Class1.cs" />
+    <None Include="DIP\DIP.cs" />
     <None Include="Dispositivos\Princi.cs" />
     <None Include="Ecepsiones\Class1.cs" />
     <None Include="Electronicos\Electronicos.cs" />
     <None Include="ElJuego\MainJuego.cs" />
+    <None Include="Estructuras\Arbol.cs" />
+    <None Include="Estructuras\Cola.cs" />
+    <None Include="Estructuras\Diccionario.cs" />
+    <None Include="Estructuras\ListaEnlazada.cs" />
+    <None Include="Estructuras\Listas.cs" />
+    <None Include="Estructuras\Pila.cs" />
+    <None Include="Estructuras\Tupla.cs" />
+    <None Include="Examen 1\SistemadeGestion.cs" />
  
 
 
@@ -71,10 +102,13 @@
     <None Include="Interfaces\ejemplo.cs" />
     <None Include="Interfaces\IAnimal.cs" />
     <None Include="Interfaces\Pagos.cs" />
+    <None Include="ISP\LSP.cs" />
     <None Include="Libreria\libro.cs" />
+    <None Include="ManejodeArchivos\ManejodeArchivos.cs" />
     <None Include="OH.cs" />
     <None Include="P1\Class1.cs" />
     <None Include="P1\Myrobot.cs" />
+    <None Include="P1\Robots.cs" />
     <None Include="PersonaL\PersonaL.cs" />
     <None Include="Rectangulo.cs" />
     <None Include="Suministros\Mainsum.cs" />
@@ -101,6 +135,14 @@
     <Reference Include="ValidacionesBilioteca">
       <HintPath>..\ValidacionesBilioteca\bin\Debug\net8.0\ValidacionesBilioteca.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="24102025\clase1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Estructuras\Arreglos.cs" />
   </ItemGroup>
 
 </Project>

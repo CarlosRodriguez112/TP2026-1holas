@@ -24,13 +24,18 @@ namespace GestionProyectosSoftware
             ExitosEquipo = 0;
         }
 
-        public void RegistrarResultadoIndividual(string proyecto, int nivel, string comentario = "")
+        public void RegistrarResultadoIndividual(string proyecto, int nivel)
         {
             if (nivel == 1)
                 ExitosIndividuales++;
-
+        }
+        public void RegistrarResultadoIndividual(string proyecto, int nivel, string comentario)
+        {
+            if (nivel == 1)
+                ExitosIndividuales++;
             if (!string.IsNullOrEmpty(comentario))
-                Console.WriteLine($"[Comentario] {Nombre} - Proyecto: {proyecto} -> {comentario}");
+                Console.WriteLine($"[Comentario] {Nombre} - Proyecto: {proyecto}");
+
         }
 
         public void RegistrarResultadoEquipo(string proyecto, string resultado, string comentario = "")
